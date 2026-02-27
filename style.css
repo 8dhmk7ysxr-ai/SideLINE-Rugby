@@ -8,29 +8,30 @@ body {
 }
 
 h1 {
-    font-size: 32px;
+    font-size: 34px;
     margin-bottom: 20px;
 }
 
 .section {
     margin: 20px 0;
-    padding: 20px;
+    padding: 25px;
     background: #222;
-    border-radius: 15px;
+    border-radius: 18px;
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 26px;
     margin-bottom: 15px;
 }
 
+/* 🔥 Taller Buttons */
 button {
     width: 45%;
-    padding: 20px;
-    margin: 10px;
-    font-size: 20px;
+    height: 80px;              /* Increased height */
+    margin: 12px;
+    font-size: 22px;           /* Bigger text */
     font-weight: bold;
-    border-radius: 12px;
+    border-radius: 15px;
     border: none;
     background: #2ecc71;
     color: white;
@@ -44,8 +45,22 @@ button.warn {
     background: orange;
 }
 
+/* 🔥 Bigger Timer */
+#timerDisplay {
+    font-size: 60px;           /* Much bigger */
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+/* Bigger Quarter Text */
+#quarterDisplay {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+/* Bigger Stats */
 #statsOutput {
-    font-size: 20px;
-    line-height: 1.6;
+    font-size: 22px;
+    line-height: 1.8;
     margin-top: 10px;
 }

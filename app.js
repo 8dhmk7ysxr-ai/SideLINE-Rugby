@@ -1,4 +1,4 @@
-let match = {
+let match = JSON.parse(localStorage.getItem("sidelineMatch")) || {
     gainlinePlus: 0,
     gainlineMinus: 0,
     domTackPlus: 0,
@@ -10,8 +10,13 @@ let match = {
     penalties: 0
 };
 
+function saveData() {
+    localStorage.setItem("sidelineMatch", JSON.stringify(match));
+}
+
 function updateStat(stat) {
     match[stat]++;
+    saveData();
     calculateMomentum();
     displayStats();
 }
@@ -46,3 +51,12 @@ function displayStats() {
         "Turnovers Lost: " + match.turnoverLost + "<br>" +
         "Penalties: " + match.penalties;
 }
+function resetMatch() {
+    localStorage.removeItem("sidelineMatch");
+    location.reload();
+}
+// LOAD DATA WHEN PAGE OPENS
+window.onload = function() {
+    displayStats();
+    calculateMomentum();
+};

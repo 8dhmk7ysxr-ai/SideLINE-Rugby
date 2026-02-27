@@ -35,12 +35,19 @@
     <button onclick="updateStat('turnoverLost')" class="neg">Turnover Lost</button>
     <button onclick="updateStat('penalties')" class="warn">Penalty</button>
 </div>
+<button onclick="resetMatch()" style="background:red;">Reset Match</button>
 
 <div class="stats">
     <h2>Live Stats</h2>
     <div id="statsOutput"></div>
 </div>
+<script src="app.js"></script>
 
-<script src="script.js"></script>
-</body>
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('service-worker.js');
+}
+</script>
+
+<script src="app.js"></script></body>
 </html>

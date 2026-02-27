@@ -1,4 +1,4 @@
-alert("JS IS LOADING");
+console.log("APP JS LOADED");
 let match = JSON.parse(localStorage.getItem("sidelineMatch")) || {
     gainlinePlus: 0,
     gainlineMinus: 0,

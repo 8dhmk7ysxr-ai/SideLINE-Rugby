@@ -1,3 +1,4 @@
+alert("JS IS LOADING");
 let match = JSON.parse(localStorage.getItem("sidelineMatch")) || {
     gainlinePlus: 0,
     gainlineMinus: 0,

@@ -1,0 +1,1 @@
+const CACHE_NAME = "sideline-rugby-v2";

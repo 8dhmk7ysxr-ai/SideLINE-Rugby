@@ -1,0 +1,17 @@
+{
+  "matchId": "001",
+  "opponent": "",
+  "date": "",
+  "ageGroup": "",
+  "scoreFor": 0,
+  "scoreAgainst": 0,
+  "gainlinePlus": 0,
+  "gainlineMinus": 0,
+  "domTackPlus": 0,
+  "domTackMinus": 0,
+  "quickBallPlus": 0,
+  "quickBallMinus": 0,
+  "turnoverWon": 0,
+  "turnoverLost": 0,
+  "penalties": 0
+}

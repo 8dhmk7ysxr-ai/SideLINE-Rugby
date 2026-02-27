@@ -43,14 +43,25 @@ function calculateMomentum() {
 }
 
 function displayStats() {
+
+    let gainTotal = match.gainlinePlus + match.gainlineMinus;
+    let tackleTotal = match.domTackPlus + match.domTackMinus;
+    let quickTotal = match.quickBallPlus + match.quickBallMinus;
+
     document.getElementById("statsOutput").innerHTML =
-        "Gainline: " + percent(match.gainlinePlus, match.gainlineMinus) + "%<br>" +
-        "Tackle Dominance: " + percent(match.domTackPlus, match.domTackMinus) + "%<br>" +
-        "Quick Ball: " + percent(match.quickBallPlus, match.quickBallMinus) + "%<br>" +
+        "Gainline: " + percent(match.gainlinePlus, match.gainlineMinus) + "% (" 
+        + match.gainlinePlus + "/" + gainTotal + ")<br>" +
+
+        "Tackle Dominance: " + percent(match.domTackPlus, match.domTackMinus) + "% (" 
+        + match.domTackPlus + "/" + tackleTotal + ")<br>" +
+
+        "Quick Ball: " + percent(match.quickBallPlus, match.quickBallMinus) + "% (" 
+        + match.quickBallPlus + "/" + quickTotal + ")<br>" +
+
         "Turnovers Won: " + match.turnoverWon + "<br>" +
         "Turnovers Lost: " + match.turnoverLost + "<br>" +
         "Penalties: " + match.penalties;
-}
+}}
 function resetMatch() {
     localStorage.removeItem("sidelineMatch");
     location.reload();

@@ -9,40 +9,38 @@
 
 <h1>🏉 Sideline Rugby</h1>
 
-<div class="top-bar">
-    <span id="time">00:00</span>
-    <span id="momentum">Momentum: Neutral</span>
-</div>
-
 <div class="section">
     <h2>Collision</h2>
     <button onclick="updateStat('gainlinePlus')">Gainline +</button>
-    <button onclick="updateStat('gainlineMinus')" class="neg">Gainline -</button>
+    <button class="neg" onclick="updateStat('gainlineMinus')">Gainline -</button>
 
     <button onclick="updateStat('domTackPlus')">Dom Tack +</button>
-    <button onclick="updateStat('domTackMinus')" class="neg">Dom Tack -</button>
+    <button class="neg" onclick="updateStat('domTackMinus')">Dom Tack -</button>
 </div>
 
 <div class="section">
     <h2>Breakdown</h2>
     <button onclick="updateStat('quickBallPlus')">Quick Ball +</button>
-    <button onclick="updateStat('quickBallMinus')" class="neg">Quick Ball -</button>
+    <button class="neg" onclick="updateStat('quickBallMinus')">Quick Ball -</button>
 </div>
 
 <div class="section">
     <h2>Discipline</h2>
     <button onclick="updateStat('turnoverWon')">Turnover Won</button>
-    <button onclick="updateStat('turnoverLost')" class="neg">Turnover Lost</button>
-    <button onclick="updateStat('penalties')" class="warn">Penalty</button>
+    <button class="neg" onclick="updateStat('turnoverLost')">Turnover Lost</button>
+    <button class="warn" onclick="updateStat('penalties')">Penalty</button>
 </div>
-<button onclick="resetMatch()" style="background:red;">Reset Match</button>
 
-<div class="stats">
+<div class="section">
     <h2>Live Stats</h2>
     <div id="statsOutput"></div>
 </div>
+
+<div class="section">
+    <button style="background:red;" onclick="resetMatch()">Reset Match</button>
+</div>
+
 <script src="app.js"></script>
 
-
-<script src="app.js"></script></body>
+</body>
 </html>

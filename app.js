@@ -1,14 +1,4 @@
-let currentQuarter = 1;
 
-function nextQuarter() {
-    if (currentQuarter < 4) {
-        currentQuarter++;
-        document.getElementById("quarterDisplay").innerText =
-            "Quarter " + currentQuarter;
-    } else {
-        alert("Match Finished");
-    }
-}
 let match = JSON.parse(localStorage.getItem("sidelineMatch")) || {
     gainlinePlus: 0,
     gainlineMinus: 0,
@@ -19,11 +9,14 @@ let match = JSON.parse(localStorage.getItem("sidelineMatch")) || {
     turnoverWon: 0,
     turnoverLost: 0,
     penalties: 0,
+    knockOn: 0,
     scrumWon: 0,
     scrumLost: 0,
     tightheadWon: 0,
     lineoutWon: 0,
-    lineoutLost: 0
+    lineoutLost: 0,
+    maulPlus: 0,
+    maulMinus: 0
 };
 
 function saveData() {
@@ -55,14 +48,16 @@ function displayStats() {
         "Tackle Dom: " + percent(match.domTackPlus, match.domTackMinus) + "% (" + match.domTackPlus + "/" + tackleTotal + ")<br><br>" +
 
         "<strong>Set Piece</strong><br>" +
-        "Scrums: " + percent(match.scrumWon, match.scrumLost) + "% (" + match.scrumWon + "/" + scrumTotal + ")<br>" +
-        "Tightheads Won: " + match.tightheadWon + "<br>" +
-        "Lineouts: " + percent(match.lineoutWon, match.lineoutLost) + "% (" + match.lineoutWon + "/" + lineoutTotal + ")<br><br>" +
+"Scrums: " + percent(match.scrumWon, match.scrumLost) + "% (" + match.scrumWon + "/" + scrumTotal + ")<br>" +
+"Tightheads Won: " + match.tightheadWon + "<br>" +
+"Lineouts: " + percent(match.lineoutWon, match.lineoutLost) + "% (" + match.lineoutWon + "/" + lineoutTotal + ")<br>" +
+"Mauls: " + percent(match.maulPlus, match.maulMinus) + "% (" + match.maulPlus + "/" + maulTotal + ")<br><br>" +
 
-        "<strong>Discipline</strong><br>" +
-        "Turnovers Won: " + match.turnoverWon + "<br>" +
-        "Turnovers Lost: " + match.turnoverLost + "<br>" +
-        "Penalties: " + match.penalties;
+"<strong>Discipline</strong><br>" +
+"Turnovers Won: " + match.turnoverWon + "<br>" +
+"Turnovers Lost: " + match.turnoverLost + "<br>" +
+"Penalties: " + match.penalties + "<br>" +
+"Knock Ons: " + match.knockOn;
 }
 
 function resetMatch() {

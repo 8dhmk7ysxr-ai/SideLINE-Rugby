@@ -48,16 +48,16 @@ function displayStats() {
         "Tackle Dom: " + percent(match.domTackPlus, match.domTackMinus) + "% (" + match.domTackPlus + "/" + tackleTotal + ")<br><br>" +
 
         "<strong>Set Piece</strong><br>" +
-"Scrums: " + percent(match.scrumWon, match.scrumLost) + "% (" + match.scrumWon + "/" + scrumTotal + ")<br>" +
-"Tightheads Won: " + match.tightheadWon + "<br>" +
-"Lineouts: " + percent(match.lineoutWon, match.lineoutLost) + "% (" + match.lineoutWon + "/" + lineoutTotal + ")<br>" +
-"Mauls: " + percent(match.maulPlus, match.maulMinus) + "% (" + match.maulPlus + "/" + maulTotal + ")<br><br>" +
+	"Scrums: " + percent(match.scrumWon, match.scrumLost) + "% (" + match.scrumWon + "/" + scrumTotal + ")<br>" +
+	"Tightheads Won: " + match.tightheadWon + "<br>" +
+	"Lineouts: " + percent(match.lineoutWon, match.lineoutLost) + "% (" + match.lineoutWon + "/" + lineoutTotal + ")<br>" +
+	"Mauls: " + percent(match.maulPlus, match.maulMinus) + "% (" + match.maulPlus + "/" + maulTotal + ")<br><br>" +
 
-"<strong>Discipline</strong><br>" +
-"Turnovers Won: " + match.turnoverWon + "<br>" +
-"Turnovers Lost: " + match.turnoverLost + "<br>" +
-"Penalties: " + match.penalties + "<br>" +
-"Knock Ons: " + match.knockOn;
+	"<strong>Discipline</strong><br>" +
+	"Turnovers Won: " + match.turnoverWon + "<br>" +
+	"Turnovers Lost: " + match.turnoverLost + "<br>" +
+	"Penalties: " + match.penalties + "<br>" +
+	"Knock Ons: " + match.knockOn;
 }
 
 function resetMatch() {

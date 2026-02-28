@@ -1,3 +1,14 @@
+let currentQuarter = 1;
+
+function nextQuarter() {
+    if (currentQuarter < 4) {
+        currentQuarter++;
+        document.getElementById("quarterDisplay").innerText =
+            "Quarter " + currentQuarter;
+    } else {
+        alert("Match Finished");
+    }
+}
 let match = JSON.parse(localStorage.getItem("sidelineMatch")) || {
     gainlinePlus: 0,
     gainlineMinus: 0,

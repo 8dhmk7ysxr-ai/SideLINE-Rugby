@@ -43,9 +43,6 @@ function displayStats() {
         "Gainline: " + percent(match.gainlinePlus, match.gainlineMinus) + "% (" + match.gainlinePlus + "/" + gainTotal + ")<br>" +
         "Tackle Dom: " + percent(match.domTackPlus, match.domTackMinus) + "% (" + match.domTackPlus + "/" + tackleTotal + ")<br><br>" +
 
-        "<strong>Breakdown</strong><br>" +
-        "Quick Ball: " + percent(match.quickBallPlus, match.quickBallMinus) + "% (" + match.quickBallPlus + "/" + quickTotal + ")<br><br>" +
-
         "<strong>Set Piece</strong><br>" +
         "Scrums: " + percent(match.scrumWon, match.scrumLost) + "% (" + match.scrumWon + "/" + scrumTotal + ")<br>" +
         "Tightheads Won: " + match.tightheadWon + "<br>" +

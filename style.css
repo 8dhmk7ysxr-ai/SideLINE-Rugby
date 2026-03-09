@@ -13,14 +13,14 @@ h1 {
 }
 
 .section {
-    margin: 20px 0;
+    margin: 24px 0;
     padding: 25px;
     background: #222;
     border-radius: 18px;
 }
 
 h2 {
-    font-size: 36px;
+    font-size: 40px;
     font-weight: 900;
     letter-spacing: 1px;
 }
@@ -29,8 +29,8 @@ h2 {
 button {
     width: 45%;
     height: 80px;              /* Increased height */
-    margin: 12px;
-    font-size: 30px;           /* Bigger text */
+    margin: 10px;
+    font-size: 40px;           /* Bigger text */
     font-weight: bold;
     border-radius: 15px;
     border: none;
